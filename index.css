@@ -1,11 +1,6 @@
 body {
   margin: 0 auto;
-
-  font-family: 'Crimson Text', serif;
-/* font-family: 'Halant', serif; */
-
-/* font-family: 'Cabin', sans-serif; */
-font-family: 'ABeeZee', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 header {
