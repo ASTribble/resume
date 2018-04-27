@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   font-family: 'ABeeZee', sans-serif;
+  min-width: 350px;
 }
 
 header {
@@ -196,7 +197,7 @@ footer dd {
   address {
     padding-left: 1em;
   }
-  
+
 }
 
 
