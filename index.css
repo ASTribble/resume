@@ -5,9 +5,14 @@ body {
 
 header {
   padding: 0 10%;
+  margin: 0 auto;
+
+  width: 80%;
   max-width: 800px;
   background-color: white;
-  margin: 0 auto;
+  
+  position: fixed;
+  z-index: 2;
 }
 
 .title{
@@ -28,7 +33,11 @@ main {
   margin: 0 auto;
   padding: 1em 11%;
   max-width: 700px;
+  position: relative;
+  top: 7em;
 }
+
+
 
 h1 {
   margin: 0;
@@ -56,6 +65,7 @@ nav {
 
 nav ul {
   margin: 0;
+  padding: 0;
 }
 
 section {
@@ -112,24 +122,144 @@ a:hover {
 footer {
   width: 100%;
   background-color: black;
+  position: relative;
+  top: 7em;
 }
 
 .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2em 2em 4em;
   margin:0 auto;
-  color: white;
-	padding: 2em 2em 4em;
+  color: #efefef;
+
   height: 12em;
   max-width: 600px;
 }
 
 img {
-	padding-right: 1em;
+  padding-right: 1em;
+  margin-top: 2em;
+
 	float: left;
-	height: 100%;
+  height: 100%;
+
+  border: 12px solid #efefef;
+  border-radius: 2px;
 }
+
 address {
-	padding-left: 8em;
+	padding-left: 4em;
 }
+
 footer dd {
 	display: inline;
+}
+
+
+/* ==== MEDIA @ 900px ====================== */
+
+@media (max-width: 900px){
+
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  main, footer {
+    top: 10em;
+  }
+
+}
+
+/* ==== MEDIA @ 532px ========================= */
+
+@media (max-width: 532px){
+
+  header {
+    padding: 0 3%;
+    width: 94%;
+  }
+
+  main, footer {
+    top: 11em;
+  }
+
+  #summary {
+    margin-top: 0;
+  }
+
+  address {
+    padding-left: 1em;
+  }
+  
+}
+
+
+/* ==== MEDIA @ 420px ======================= */
+
+@media(max-width: 450px){
+
+    header {
+    padding: 0 3%;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2.4em;
+  }
+
+  header p{
+    font-size: 1.4em;
+  }
+
+  nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+  nav li {
+    display: flex;
+    flex-direction: row;
+    padding:0;
+  }
+
+  #tech-skills ul{
+    padding-left: 1em;
+  }
+
+  main dl, main dd {
+    padding-left: 0;
+    padding-right: 0;
+    margin: .7em 0;
+  }
+
+  dt {
+    font-size: 1em;
+  }
+
+  address {
+    margin: 1em 0 2em;
+    padding: 0
+  }
+
+  footer {
+    height: 35em;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
 }
