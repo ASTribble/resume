@@ -102,6 +102,10 @@ dd {
   margin-bottom: .2em;
 }
 
+.italics {
+  font-style: italic;
+}
+
 dd ul {
   margin-top: .2em;
 }

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ASTribble/resume/issues"
   },
-  "homepage": "https://github.com/ASTribble/resume#readme"
+  "homepage": "https://github.com/ASTribble/resume#readme",
+  "dependencies": {
+    "nodemon": "^1.19.0",
+    "npm": "^6.9.0"
+  }
 }
